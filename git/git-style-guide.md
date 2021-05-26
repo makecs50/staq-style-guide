@@ -4,26 +4,26 @@
 
 There are seven rules that will make your Git messages better:  
 
-[1. Separate subject from the body with the blank line](#first-rule)  
-[2. Limit the subject line to 50 characters](#second-rule)  
-[3. Capitalize the subject line](#third-rule)  
-[4. Do not end the subject line with a period](#fourth-rule)  
-[5. Use the imperative mood in the subject line](#fifth-rule)  
-[6. Wrap the body at 72 characters](#sixth-rule)  
-[7. Use the body to explain *what* and *why* vs. *how*](#seventh-rule)
+1. [Separate subject from the body with the blank line](#separate-subject-from-the-body-with-the-blank-line)  
+2. [Limit the subject line to 50 characters](#limit-the-subject-line-to-50-characters)  
+3. [Capitalize the subject line](#capitalize-the-subject-line)  
+4. [Do not end the subject line with a period](#do-not-end-the-subject-line-with-a-period)  
+5. [Use the imperative mood in the subject line](#use-the-imperative-mood-in-the-subject-line)  
+6. [Wrap the body at 72 characters](#wrap-the-body-at-72-characters)  
+7. [Use the body to explain *what* and *why* vs. *how*](#use-the-body-to-explain-what-and-why-vs-how)
 
 Also you'll find methods [how to write body in Git commit message](#how-to-write-body)
 
-But first let's look at real [good Git commit message](#good-git-message).
+But first let's look at real good Git commit message below.
 
-[![img.png](good-git-message.png 'The good Git commit message')](#good-git-message)
+![img.png](good-git-message.png 'The good Git commit message')]
 
-## [1.](#first-rule) Separate subject from the body with the blank line
+## 1. Separate subject from the body with the blank line
 
 Why do we need a subject? **Subject** is needed for short lookup of what have been
 done in the commit. Subject is the first sentence in your commit message, and it must
 show the big picture of the commit. In the **body** you could write details about what 
-and why was changed/added/removed (use the [7th rule here](#seventh-rule)). But you
+and why was changed/added/removed (use the [7th rule here](#use-the-body-to-explain-what-and-why-vs-how)). But you
 should know that not all commit messages needs the body, some commits are good to go 
 with only the subject.
 
@@ -93,9 +93,9 @@ editing commit message in Vim without defining it as default editor.
 > what we could do just with the ``git config --global core.commentChar <your
 > character here>``.
 
-On that note [first rule](#first-rule) is over :).
+On that note [first rule](#separate-subject-from-the-body-with-the-blank-line) is over :).
 
-## [2.](#second-rule) Limit the subject line to 50 characters
+## 2. Limit the subject line to 50 characters
 
 It's as easy as it sounds - don't let your subject be more than 50 characters.
 The point is that the subject should have only **main** change of the commit.
@@ -106,7 +106,7 @@ case, if you did a lot of changes, and now you need to commit them, you can
 ``git add <file name>`` and commit each file or several files describing in commit
 message changes made in them. That solves the problem.
 
-## [3.](#third-rule) Capitalize the subject line
+## 3. Capitalize the subject line
 
 Another simple rule. As subjects are 'titles' of our commits, like titles of
 books, movies or anything else, they should start from upper case letter.
@@ -114,7 +114,7 @@ It's not an obligation, but agreement in the <span style="color: #63d297">
 **Staq Dev Studio**</span>. If you are not agree with that, explain your
 position, and our style guides could be changed.
 
-## [4.](#fourth-rule) Do not end the subject line with a period
+## 4. Do not end the subject line with a period
 
 At least it looks not cool. As every subject (read as 'commit') is not associated
 with another subject, we don't need period between them. For example:
@@ -136,7 +136,7 @@ Meh.
 
 Just don't use period, it's also agreement.
 
-## [5.](#fifth-rule) Use the imperative mood in the subject line
+## 5. Use the imperative mood in the subject line
 
 *Imperative mood* just means “spoken or written as if giving a command or 
 instruction”. For example:
@@ -177,7 +177,7 @@ In above example it will be:
 - If applied, this commit will ***fix wriggling in exchange page***
 - If applied, this commit will ***change the way statistics filter behave on mobile screens***
 
-## [6.](#sixth-rule) Wrap the body at 72 characters
+## 6. Wrap the body at 72 characters
 
 When you are writing Git commit message body, it's lines should not be more
 than 72 characters. Not sentence, but line. We have an agreement that allows us
@@ -194,7 +194,7 @@ In the example above we have the subject, that is 50 characters long, and body l
 that is 72 characters long. As you see, body line is a few words longer that the
 subject line.
 
-## [7.](#seventh-rule) Use the body to explain *what* and *why* vs. *how*
+## 7. Use the body to explain *what* and *why* vs. *how*
 
 Body in commit message uses to describe ***what*** problem were in the changed file
 and ***why*** the problem occurred.
