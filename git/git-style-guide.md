@@ -93,7 +93,7 @@ editing commit message in Vim without defining it as default editor.
 > what we could do just with the ``git config --global core.commentChar <your
 > character here>``.
 
-On that note [first rule](#7-separate-subject-from-the-body-with-the-blank-line) is over :).
+On that note first rule is over :).
 
 ## 2. Limit the subject line to 50 characters
 
