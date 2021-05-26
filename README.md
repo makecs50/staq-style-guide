@@ -6,6 +6,7 @@
 - [CSS-in-JavaScript](css-in-javascript/)
 - [TypeScript](typescript/)
 - [Git](git/)
+- [Markdown hints](markdown-hints.md)
 
 ## Quick access
 - Git
