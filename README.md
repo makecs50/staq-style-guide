@@ -1,4 +1,4 @@
-# Staq JavaScript Style Guide
+<h1> <span style="color: #63d297">Staq</span> JavaScript Style Guide</h1>
 
 *A mostly reasonable approach*
 
