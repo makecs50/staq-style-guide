@@ -4,13 +4,13 @@
 
 There are seven rules that will make your Git messages better:  
 
-1. [Separate subject from the body with the blank line](#separate-subject-from-the-body-with-the-blank-line)  
-2. [Limit the subject line to 50 characters](#limit-the-subject-line-to-50-characters)  
-3. [Capitalize the subject line](#capitalize-the-subject-line)  
-4. [Do not end the subject line with a period](#do-not-end-the-subject-line-with-a-period)  
-5. [Use the imperative mood in the subject line](#use-the-imperative-mood-in-the-subject-line)  
-6. [Wrap the body at 72 characters](#wrap-the-body-at-72-characters)  
-7. [Use the body to explain *what* and *why* vs. *how*](#use-the-body-to-explain-what-and-why-vs-how)
+1. [Separate subject from the body with the blank line](#1-separate-subject-from-the-body-with-the-blank-line)  
+2. [Limit the subject line to 50 characters](#2-limit-the-subject-line-to-50-characters)  
+3. [Capitalize the subject line](#3-capitalize-the-subject-line)  
+4. [Do not end the subject line with a period](#4-do-not-end-the-subject-line-with-a-period)  
+5. [Use the imperative mood in the subject line](#5-use-the-imperative-mood-in-the-subject-line)  
+6. [Wrap the body at 72 characters](#6-wrap-the-body-at-72-characters)  
+7. [Use the body to explain *what* and *why* vs. *how*](#7-use-the-body-to-explain-what-and-why-vs-how)
 
 Also you'll find methods [how to write body in Git commit message](#how-to-write-body)
 
@@ -23,7 +23,7 @@ But first let's look at real good Git commit message below.
 Why do we need a subject? **Subject** is needed for short lookup of what have been
 done in the commit. Subject is the first sentence in your commit message, and it must
 show the big picture of the commit. In the **body** you could write details about what 
-and why was changed/added/removed (use the [7th rule here](#use-the-body-to-explain-what-and-why-vs-how)). But you
+and why was changed/added/removed (use the [7th rule here](#7-use-the-body-to-explain-what-and-why-vs-how)). But you
 should know that not all commit messages needs the body, some commits are good to go 
 with only the subject.
 
@@ -93,7 +93,7 @@ editing commit message in Vim without defining it as default editor.
 > what we could do just with the ``git config --global core.commentChar <your
 > character here>``.
 
-On that note [first rule](#separate-subject-from-the-body-with-the-blank-line) is over :).
+On that note [first rule](#7-separate-subject-from-the-body-with-the-blank-line) is over :).
 
 ## 2. Limit the subject line to 50 characters
 
