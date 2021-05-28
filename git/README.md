@@ -5,7 +5,7 @@
 We have our own rules of writing Git commit messages. The template of it is:
 
 ```
-$ git commit -m "#<number-of-the-issue> - <frontend/backend> (Feature/Fix/Docs/Style/Refactor/Test/Chores): <subject-of-the-commit>"
+$ git commit -m "#<number-of-the-issue> - <frontend/backend> (Feature/Fix/Docs/Style/Refactor/Test/Chore): <subject-of-the-commit>"
 ```
 Here:  
 `number-of-the-issue` - is the number of the issue that Gitlab gave to it, when it was created.
@@ -145,7 +145,7 @@ At least it looks not cool. As every subject (read as 'commit') is not associate
 with another subject, we don't need period between them. For example:
 ```
 5f08bd34 #80 - frontend (Feature): Create Delayed posts page with same named component
-409879fa #69 - frontend (Chores): Resolve warnings and deleting unused code
+409879fa #69 - frontend (Chore): Resolve warnings and deleting unused code
 669fbc7b #73 - frontend (Fix): Fix wriggling in exchange page
 727dab41 #74 - frontend (Fix): Change the way statistics filter behave on mobile screens
 ```
@@ -153,7 +153,7 @@ with another subject, we don't need period between them. For example:
 Now let's look at example above, but with periods:
 ```
 5f08bd34 #80 - frontend (Feature): Create Delayed posts page with same named component.
-409879fa #69 - frontend (Chores): Resolve warnings and deleting unused code.
+409879fa #69 - frontend (Chore): Resolve warnings and deleting unused code.
 669fbc7b #73 - frontend (Fix): Fix wriggling in exchange page.
 727dab41 #74 - frontend (Fix): Change the way statistics filter behave on mobile screens.
 ```
