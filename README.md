@@ -7,7 +7,3 @@
 - [TypeScript](typescript/)
 - [Git](git/)
 - [Markdown hints](markdown-hints.md)
-
-## Quick access
-- Git
-    - [How to write Git commit messages](git/git-style-guide.md)
