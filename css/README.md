@@ -149,3 +149,5 @@ be just `blockName`. Any element that defined in container is a block:
 ---
 Remember that every member of Staq can offer a correction to this convention
 or even brand new convention. You just need to explain why we need it.
+---
+[Shamil Khashaev](https://github.com/skhashaev)

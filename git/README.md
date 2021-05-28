@@ -2,6 +2,31 @@
 
 > **Note:** This has been all said before
 
+We have our own rules of writing Git commit messages. The template of it is:
+
+```
+$ git commit -m "#<number-of-the-issue> - <frontend/backend> (Feature/Fix/Docs/Style/Refactor/Test/Chores): <subject-of-the-commit>"
+```
+Here:  
+`number-of-the-issue` - is the number of the issue that Gitlab gave to it, when it was created.
+While we use Gitlab, this number is the mandatory.  
+`frontend/backend` - it is description for which part of the project commit is related.  
+In parentheses there are types of the commit:  
+`Feature` - new feature for the user, not a new feature for build script.  
+`Fix` - bug fix for the user, not a fix to a build script.  
+`Docs` - Changes to the documentation.  
+`Style` - Formatting, missing semicolons, etc; no production code change.  
+`Refactor` - Refactoring production code, e.g. renaming variable.  
+`Test` - Adding missing tests, refactoring tests; no production code change.  
+`Chore` - updating grunt tasks, deleting commented code, etc.; no production code change.  
+
+Your Git commit message could contain only the subject, or the subject and the body. Let's talk about that.
+
+> **Note**: Examples that you'll see below are not written using our patter for simplicity.  
+> If you see example like `$ git commit -m "Do something useful in this commit"`,  
+> then you should understand that in the project we use:  
+> `$ git commit -m "#<number-of-the-issue> - <fronted/backend> (<type-of-changes>): Do something useful in this commit"`
+
 There are seven rules that will make your Git messages better:  
 
 1. [Separate subject from the body with the blank line](#1-separate-subject-from-the-body-with-the-blank-line)  
