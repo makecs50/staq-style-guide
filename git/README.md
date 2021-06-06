@@ -25,13 +25,13 @@ Your Git commit message could contain only the subject, or the subject and the b
 > **Note**: Examples that you'll see below are not written using our patter for simplicity.  
 > If you see example like `$ git commit -m "Do something useful in this commit"`,  
 > then you should understand that in the project we use:  
-> `$ git commit -m "#<number-of-the-issue> - <fronted/backend> (<type-of-changes>): Do something useful in this commit"`
+> `$ git commit -m "#<number-of-the-issue> - <fronted/backend> (<type-of-changes>): do something useful in this commit"`
 
 There are seven rules that will make your Git messages better:  
 
 1. [Separate subject from the body with the blank line](#1-separate-subject-from-the-body-with-the-blank-line)  
 2. [Limit the subject line to 50 characters](#2-limit-the-subject-line-to-50-characters)  
-3. [Capitalize the subject line](#3-capitalize-the-subject-line)  
+3. [Don't capitalize the subject line](#3-dont-capitalize-the-subject-line)  
 4. [Do not end the subject line with a period](#4-do-not-end-the-subject-line-with-a-period)  
 5. [Use the imperative mood in the subject line](#5-use-the-imperative-mood-in-the-subject-line)  
 6. [Wrap the body at 72 characters](#6-wrap-the-body-at-72-characters)  
@@ -131,31 +131,33 @@ case, if you did a lot of changes, and now you need to commit them, you can
 ``git add <file name>`` and commit each file or several files describing in commit
 message changes made in them. That solves the problem.
 
-## 3. Capitalize the subject line
+## 3. Don't capitalize the subject line
 
-Another simple rule. As subjects are 'titles' of our commits, like titles of
+<strike>Another simple rule. As subjects are 'titles' of our commits, like titles of
 books, movies or anything else, they should start from upper case letter.
 It's not an obligation, but agreement in the <span style="color: #63d297">
 **Staq Dev Studio**</span>. If you are not agree with that, explain your
-position, and our style guides could be changed.
+  position, and our style guides could be changed.</strike>
+  
+New: We don't do that here anymore, ha))) (c) Lema
 
 ## 4. Do not end the subject line with a period
 
 At least it looks not cool. As every subject (read as 'commit') is not associated
 with another subject, we don't need period between them. For example:
 ```
-5f08bd34 #80 - frontend (Feature): Create Delayed posts page with same named component
-409879fa #69 - frontend (Chore): Resolve warnings and deleting unused code
-669fbc7b #73 - frontend (Fix): Fix wriggling in exchange page
-727dab41 #74 - frontend (Fix): Change the way statistics filter behave on mobile screens
+5f08bd34 #80 - frontend (Feature): create Delayed posts page with same named component
+409879fa #69 - frontend (Chore): resolve warnings and deleting unused code
+669fbc7b #73 - frontend (Fix): fix wriggling in exchange page
+727dab41 #74 - frontend (Fix): change the way statistics filter behave on mobile screens
 ```
 
 Now let's look at example above, but with periods:
 ```
-5f08bd34 #80 - frontend (Feature): Create Delayed posts page with same named component.
-409879fa #69 - frontend (Chore): Resolve warnings and deleting unused code.
-669fbc7b #73 - frontend (Fix): Fix wriggling in exchange page.
-727dab41 #74 - frontend (Fix): Change the way statistics filter behave on mobile screens.
+5f08bd34 #80 - frontend (Feature): create Delayed posts page with same named component.
+409879fa #69 - frontend (Chore): resolve warnings and deleting unused code.
+669fbc7b #73 - frontend (Fix): fix wriggling in exchange page.
+727dab41 #74 - frontend (Fix): change the way statistics filter behave on mobile screens.
 ```
 Meh.
 
