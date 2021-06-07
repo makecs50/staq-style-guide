@@ -235,7 +235,7 @@ and ***why*** the problem occurred.
 For general growth I suggest you to read real Git commit from 
 [Bitcoin Core](https://github.com/bitcoin/bitcoin/commit/eb0b56b19017ab5c16c745e6da39c53126924ed6), 
 where all the rules above are followed.
-  
+---
 **(07.06.2021) UPD**: Zelim Gerikhanov, Said-Magomed Sadulaev, Abdul-Malik Abubakirov, Lom-Ali Gurzhikhanov
 and Aslambek Abubakarov voted for writing commit message title by lowercase letter, i.e.
 `#<number-of-issue> - <front/back> (<type>): some title of the commit starting from the lowercase letter`.
