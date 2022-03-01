@@ -42,48 +42,48 @@ code. The block name describes its purpose ('What is it?' - `menu` or `button`).
 **Element** is a composite part of a block that can't be used separately from it.
 - The element name describes its purpose ("What is this?" — `item`, `text`, etc.), 
 not its state ("What type, or what does it look like?" — `red`, `big`, etc.).
-- The structure of an element's full name is `blockName__elementName`.
-  The element name is separated from the block name with a double underscore (__).
+- The structure of an element's full name is `blockName_elementName`.
+  The element name is separated from the block name with an underscore (_).
 ```
   <!-- `searchForm` block -->
   <form class="searchForm">
       <!-- `input` element in the `searchForm` block -->
-      <input class="searchForm__input">
+      <input class="searchForm_input">
 
       <!-- `button` element in the `searchForm` block -->
-      <button class="searchForm__button">Search</button>
+      <button class="searchForm_button">Search</button>
   </form>
 ```
 
 - Elements can be nested inside each other.
 - You can have any number of nesting levels.
 - An element is always part of a block, not another element. This means that element 
-names can't define a hierarchy such as block__elem1__elem2.
+names can't define a hierarchy such as block_elem1_elem2.
   
 ```
   <!--
     Correct. The structure of the full element name follows the pattern:
-    `blockName__elementName`
+    `blockName_elementName`
   -->
   <form class="searchForm">
-      <div class="searchForm__content">
-          <input class="searchForm__input">
+      <div class="searchForm_content">
+          <input class="searchForm_input">
 
-          <button class="searchForm__button">Search</button>
+          <button class="searchForm_button">Search</button>
       </div>
   </form>
 
   <!--
       Incorrect. The structure of the full element name doesn't follow the pattern:
-      `blockName__elementName`
+      `blockName_elementName`
   -->
   <form class="searchForm">
-      <div class="searchForm__content">
-          <!-- Recommended: `searchForm__input` or `searchForm__contentInput` -->
-          <input class="searchForm__content__input">
+      <div class="searchForm_content">
+          <!-- Recommended: `searchForm_input` or `searchForm_contentInput` -->
+          <input class="searchForm_content_input">
 
-          <!-- Recommended: `searchForm__button` or `searchForm__contentButton` -->
-          <button class="searchForm__content__button">Search</button>
+          <!-- Recommended: `searchForm_button` or `searchForm_contentButton` -->
+          <button class="searchForm_content_button">Search</button>
       </div>
   </form>
 ```
@@ -94,7 +94,7 @@ names can't define a hierarchy such as block__elem1__elem2.
   or `themeIslands`), its state ("How is it different from the others?" — `disabled`, `focused`, etc.) 
   and its behavior ("How does it behave?" or "How does it respond to the user?" — such 
   as `directionsLeftTop`).
-- The modifier name is separated from the block or element name by a double dash (--).
+- The modifier name is separated from the block or element name by double underscore (__).
 - A modifier can't be used alone. From the BEM perspective, a modifier can't be used in isolation 
   from the modified block or element. A modifier should change the appearance, behavior, or state 
   of the entity, not replace it.
@@ -103,17 +103,17 @@ names can't define a hierarchy such as block__elem1__elem2.
       Correct. The `searchForm` block has the `theme` modifier with
       the value `islands`
   -->
-  <form class="searchForm searchForm--themeIslands">
-      <input class="search-form__input">
+  <form class="searchForm searchForm__themeIslands">
+      <input class="searchForm_input">
 
-      <button class="searchForm__button">Search</button>
+      <button class="searchForm_button">Search</button>
   </form>
 
   <!-- Incorrect. The modified class `searchForm` is missing -->
-  <form class="searchForm--themeIslands">
-      <input class="searchForm__input">
+  <form class="searchForm__themeIslands">
+      <input class="searchForm_input">
 
-      <button class="searchForm__button">Search</button>
+      <button class="searchForm_button">Search</button>
   </form>
 ```
 The div above is the reusable Block that has styles class 'blockName'. Block
@@ -131,7 +131,7 @@ is bad idea, because component could be very long, and have such long class name
 in simple component don't look good. And we decided to name the upper tag's (first one)
 class name just `container`. The idea is that first tag is the container of 
 component's elements. Container, as BEM block, could be empty. The second tag's
-class name will not be `container__blockName` or `container_elementName`, it will
+class name will not be `container_blockName` or `container_elementName`, it will
 be just `blockName`. Any element that defined in container is a block:
 
 ```
