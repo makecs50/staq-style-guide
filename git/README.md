@@ -5,7 +5,7 @@
 We have our own rules of writing Git commit messages. The template of it is:
 
 ```
-$ git commit -m "#<number-of-the-issue> - <frontend/backend> (Feature/Fix/Docs/Style/Refactor/Test/Chore): <subject-of-the-commit>"
+$ git commit -m "#<number-of-the-issue> - <front/back/devops> (Feature/Fix/Docs/Style/Refactor/Test/Chore/Grammar): <subject-of-the-commit>"
 ```
 Here:  
 `number-of-the-issue` - is the number of the issue that Gitlab gave to it, when it was created.
